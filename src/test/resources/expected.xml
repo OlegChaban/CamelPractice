@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<directory name=".">
+    <folder name="src">
+        <folder name="main">
+            <folder name="java">
+                <folder name="com">
+                    <folder name="nixsolutions">
+                        <folder name="chaban">
+                            <folder name="camel">
+                                <folder name="endpoint">
+                                    <file name="CustomEndpoint.java" size="1242"/>
+                                </folder>
+                                <folder name="consumer">
+                                    <file name="CustomConsumer.java" size="1937"/>
+                                </folder>
+                                <folder name="component">
+                                    <file name="CustomComponent.java" size="578"/>
+                                </folder>
+                                <folder name="beans">
+                                    <file name="Folders.java" size="1131"/>
+                                    <file name="Files.java" size="732"/>
+                                </folder>
+                                <file name="DirectoryToXml.java" size="1327"/>
+                            </folder>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+            <folder name="resources">
+                <file name="log4j.properties" size="221"/>
+            </folder>
+        </folder>
+        <folder name="test">
+            <folder name="java">
+                <folder name="com">
+                    <folder name="nixsolutions">
+                        <folder name="chaban">
+                            <folder name="camel">
+                                <file name="DirectoryToXmlTest.java" size="708"/>
+                            </folder>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+            <folder name="resources">
+                <file name="sunchecks.xml" size="7317"/>
+                <file name="expected.xml" size="2236"/>
+            </folder>
+        </folder>
+    </folder>
+    <file name="pom.xml" size="3338"/>
+</directory>
