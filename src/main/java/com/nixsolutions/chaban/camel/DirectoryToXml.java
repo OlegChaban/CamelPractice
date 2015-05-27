@@ -14,26 +14,23 @@ public class DirectoryToXml {
 
     private Boolean sleep = true;
 
-    public void run(final String directoryPath,final
-            String fileName) throws Exception {
+    public void run(final String directoryPath, final String fileName)
+            throws Exception {
         CamelContext context = new DefaultCamelContext();
-        context.addComponent("toXml",new CustomComponent());
+        context.addComponent("toXml", new CustomComponent());
         context.addRoutes(new RouteBuilder() {
             @Override
             public void configure() throws Exception {
-                from("toXml:" + directoryPath)
-                           .process(new Processor() {
-                            @Override
-                            public void process(Exchange exchange)
-                                    throws Exception {
-                                sleep = false;
-                            }
-                        })
-                        .to("file:?fileName=" + fileName);
+                from("toXml:" + directoryPath).process(new Processor() {
+                    @Override
+                    public void process(Exchange exchange) throws Exception {
+                        sleep = false;
+                    }
+                }).to("file:?fileName=" + fileName);
             }
         });
         context.start();
-        while(sleep){
+        while (sleep) {
             Thread.sleep(100);
         }
         context.stop();

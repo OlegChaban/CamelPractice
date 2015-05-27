@@ -5,6 +5,7 @@ import java.util.Map;
 import com.nixsolutions.chaban.camel.endpoint.CustomEndpoint;
 import org.apache.camel.Endpoint;
 import org.apache.camel.impl.DefaultComponent;
+
 /**
  * Created by chaban on 22.05.15.
  */

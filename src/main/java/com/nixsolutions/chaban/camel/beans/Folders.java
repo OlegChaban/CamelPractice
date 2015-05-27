@@ -16,8 +16,10 @@ public class Folders {
 
     @XmlAttribute
     private String name;
+
     @XmlElement(name = "folder")
     private List<Folders> folders = new ArrayList<Folders>();
+
     @XmlElement(name = "file")
     private List<Files> files = new ArrayList<Files>();
 

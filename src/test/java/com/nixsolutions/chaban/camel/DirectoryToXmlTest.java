@@ -11,13 +11,15 @@ import java.io.FileInputStream;
  */
 public class DirectoryToXmlTest extends XMLTestCase {
     String expected = ("expected.xml");
-    String actual =("./target/actual.xml");
+    String actual = ("./target/actual.xml");
 
     @Test
     public void test() throws Exception {
         DirectoryToXml transformer = new DirectoryToXml();
-        transformer.run("./","./target/actual.xml");
-        assertXMLEqual(new InputSource(Thread.currentThread().getContextClassLoader()
-                .getResourceAsStream(expected)),new InputSource(new FileInputStream(actual)));
+        transformer.run("./", "./target/actual.xml");
+        assertXMLEqual(new InputSource(
+                Thread.currentThread().getContextClassLoader()
+                        .getResourceAsStream(expected)),
+                new InputSource(new FileInputStream(actual)));
     }
 }

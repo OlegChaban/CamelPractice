@@ -45,7 +45,7 @@ public class CustomConsumer extends ScheduledPollConsumer {
         for (File file : files) {
             if (file.isFile()) {
                 result.addFile(toFiles(file));
-            } else if (file.isDirectory()&&!file.getName().equals("target")) {
+            } else if (file.isDirectory() && !file.getName().equals("target")) {
                 result.addDirectory(getFolder(file.getAbsolutePath()));
             }
         }

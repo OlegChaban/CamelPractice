@@ -33,6 +33,7 @@ public class CustomEndpoint extends DefaultPollingEndpoint {
         configureConsumer(consumer);
         return consumer;
     }
+
     @Override
     public boolean isSingleton() {
         return true;
